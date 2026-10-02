@@ -1,0 +1,44 @@
+# Python dependencies (all projects)
+# Python >= 3.10 recommended; tested with 3.13
+
+pandas>=2.0
+numpy>=1.26
+scipy>=1.11
+statsmodels>=0.14
+lifelines>=0.30
+scikit-learn>=1.4
+matplotlib>=3.8
+seaborn>=0.13
+openpyxl>=3.1
+Pillow>=10.0
+requests>=2.31
+python-docx>=1.1
+scanpy>=1.10
+anndata>=0.10
+tidepy>=0.1
+
+# ----------------------------------------------------------------------------
+# Additional Python dependencies
+# ----------------------------------------------------------------------------
+# h5py is required by project 04 (scRNA-seq scripts read .h5 files):
+#   01_pseudobulk_ncc_v5.py
+#   02_celltype_subtype_expression_v5.py
+#   panel68_cell_source_binning_v1.py
+h5py>=3.9
+
+# ----------------------------------------------------------------------------
+# Note on tidepy
+# ----------------------------------------------------------------------------
+# tidepy is not available on PyPI. If `pip install -r requirements.txt` fails
+# at the tidepy line, install it separately from GitHub:
+#
+#   pip install git+https://github.com/compbio-compare/tidepy.git
+#
+# Project 08 uses tidepy; the other projects do not.
+
+# ----------------------------------------------------------------------------
+# R dependencies (install separately, see root README.md)
+# ----------------------------------------------------------------------------
+# Bioconductor: limma, edgeR, GSVA, fgsea, org.Hs.eg.db, AnnotationDbi,
+#               oncoPredict
+# GitHub:       xCell, CIBERSORT (registration required)
